@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-ng-app='myApp'>
-<html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,10 +14,8 @@
     <!-- Bootstrap core CSS -->
     <!--<link href="../../dist/css/bootstrap.min.css" rel="stylesheet"> -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="assets/js/ie-emulation-modes-warning.js"></script>
@@ -96,7 +93,7 @@
               <h1>Experts in Hosting</h1>
               <p>Bliss Integrated Solutions are experts in providing Hosting Solutions</p>
               <!--<p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p> -->
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn More</a></p>
+              <p><a class="btn btn-lg btn-primary" href="#hosting" role="button">Learn More</a></p>
             </div>
           </div>
         </div>
@@ -108,7 +105,7 @@
               <h1>Experts in Web Design.</h1>
               <!--<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>-->
               <p>Bliss Integrated Solutions are experts in building responsive, mobile friendly, websites</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Web Services</a></p>
+              <p><a class="btn btn-lg btn-primary" href="#design" role="button">Web Services</a></p>
             </div>
           </div>
         </div>
@@ -120,7 +117,7 @@
               <h1>IT Consultancy Services</h1>
               <!--<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>-->
               <p>Bliss Integrated Solutions have many years of consulting experience, and are experienced with Agile/Scrum development Projects</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Our Services</a></p>
+              <p><a class="btn btn-lg btn-primary" href="#consulting" role="button">Our Services</a></p>
             </div>
           </div>
         </div>
@@ -172,10 +169,11 @@
       <div class="row featurette">
         <div class="col-md-7">
           <h2 class="featurette-heading">Server Hosting <span class="text-muted"></span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <p class="lead">Domain names, CPanel and Cloud hosting plus all the extras - web design, SEO, PPC, website security and server optimization. Bliss Integrated Solutions can help grow your business.</p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <!--<img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">-->
+          <img class="featurette-image img-responsive center-block" src="images/server_500x500.jpg" alt="Generic placeholder image">
         </div>
       </div>
 
@@ -187,7 +185,8 @@
           <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
         </div>
         <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <!--<img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">-->
+          <img class="featurette-image img-responsive center-block" src="images/server_500x500.jpg" alt="Generic placeholder image">
         </div>
       </div>
 
@@ -199,7 +198,8 @@
           <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <!--<img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">-->
+          <img class="featurette-image img-responsive center-block" src="images/server_500x500.jpg" alt="Generic placeholder image">
         </div>
       </div>
 
@@ -222,10 +222,11 @@
            <h4>Links</h4>
             <ul class='list-unstyled'>
               <li><a href='#home'>Home</a></li>
+              <li><a href='#about'>About Us</a></li>
               <li><a href='#hosting'>Hosting</a></li>
               <li><a href='#design'>Web Design</a></li>
               <li><a href='#consulting'>Consulting</a></li>
-
+              <li><a href='#contact'>Contact Us</a></li>
             </ul>
       </div>
 
@@ -261,14 +262,30 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular-sanitize.min.js"></script>
+    <script src="js/ng-csv.min.js"></script>
+    <script src="js/app.js"></script>
+
+    <!--<script src="js/jquery.min.js"></script>
+    //<script type="text/javascript" src="angular.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <!--<script src="../../dist/js/bootstrap.min.js"></script>-->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-    <script src="assets/js/vendor/holder.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular-sanitize.min.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>-->
+    <!-- Just to make our placeholder images work. Don't actually copy the next line!
+    <script src="assets/js/vendor/holder.min.js"></script> -->
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
-    <script src="js/app.js"></script>
+    <!--<script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/ng-csv.min.js"></script>
+    <script src="js/app.js"></script>-->
   </body>
 </html>
