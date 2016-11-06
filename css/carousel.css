@@ -110,9 +110,16 @@ body {
 /* FOOTER CSS
 -------------------------------------------------- */
 #footer {
-    background: #000000;
-    background-color: #000000;
-    color: #ffffff;
+    background: #212121;
+    background-color: #212121;
+    color: #f9f9f9;
+    padding-top: 15px;
+    position: static;
+    bottom:0;
+    width: 100%;
+    height: 200px;
+    /* box-sizing: border-box; */
+
 }
 
 /* RESPONSIVE CSS
