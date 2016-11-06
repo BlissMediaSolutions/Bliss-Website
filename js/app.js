@@ -3,22 +3,23 @@ app.config(function ($routeProvider) {
     $routeProvider.when("/", {
         templateUrl: "templates/home.html"
     }).when("/consulting", {
-        controller: 'ConsultController',
+        //controller: 'ConsultController',
         templateUrl: "templates/consulting.html"
-//    }).when("/sales/:saleId", {
-//        controller: 'SalesController',
-//        templateUrl: "./templates/sales.html"
-//    }).when("/products", {
-//        controller: 'ProductController',
-//        templateUrl: "./templates/products.html"
-//    }).when("/reports", {
-//        controller: 'ReportController',
-//        templateUrl: "./templates/reports.html"
-//    }).when("/faq", {
-//        templateUrl: "./templates/faq.html"
-//    }).when("/predictions", {
-//        controller: 'PredictionController',
-//        templateUrl: "./templates/predictions.html"
+    }).when("/design", {
+//        controller: 'DesignController',
+        templateUrl: "templates/design.html"
+    }).when("/hosting", {
+//        controller: 'HostingController',
+        templateUrl: "templates/hosting.html"
+    }).when("/about", {
+//        controller: 'AboutController',
+        templateUrl: "templates/about.html"
+    }).when("/contact", {
+//        controller: 'ContactController'
+        templateUrl: "templates/contact.html"
+    }).when("/virtual", {
+//        controller: 'VirtualController',
+        templateUrl: "templates/virtual.html"
     })
 });
 
