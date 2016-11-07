@@ -166,3 +166,10 @@ body {
     margin-top: 120px;
   }
 }
+
+/* Google Maps */
+#map {
+        height: 400px;
+        width: 95%;
+        margin: 0 auto 0 auto;
+}

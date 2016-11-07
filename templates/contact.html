@@ -1,9 +1,21 @@
 <hr class="featurette-divider">
 
 <div class="row">
-     <h1 class="text-center">Contact Us</h1>
+    <h1 class="text-center">Contact Us</h1>
+    <br>
+    <div id="map"></div>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -37.756292, lng: 145.066764},
+          zoom: 15
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQ3dGV75HmnthEm1owKa1XS0QmvEOOq60&callback=initMap"
+    async defer></script>
 
-    <div id="map-canvas"></div>
     <hr>
     <div class="col-sm-8">
         <div class="row form-group">
@@ -42,18 +54,15 @@
           PO Box 31,<br>
           Heidelberg, Vic 3084<br>
           </span>
-          <!--<li><i class='glyphicon glyphicon-globe'></i> Melbourne<li>-->
-          <h5 class='glyphicon glyphicon-phone'>0401 819 255</h5>
+          <h5>Phone: 0401 819 255</h5>
         </address>
- <address>
+         <address>
           <strong>Email Us</strong><br>
           <a href="mailto:info@bliss.net.au">info@bliss.net.au</a>
         </address>
     </div>
 </div>
 <!--/row-->
-
-
 
 <!--<div class="container">
   <div class="row">
@@ -66,3 +75,4 @@
   </div>
 </div>-->
 <hr class="featurette-divider">
+<script>google.maps.event.addDomListener(window, "load", initialize);</script>
