@@ -7,7 +7,6 @@ body {
   color: #5a5a5a;
 }
 
-
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
@@ -39,6 +38,19 @@ body {
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
+
+/* Custom Carousel Heading */
+#carousel-heading {
+    color: #27ace5;
+    text-shadow: 2px 2px #000000;
+    font-weight: bold;
+}
+
+/* custom carousel Text */
+#carousel-text {
+    color: #27ace5;
+    text-shadow: 1px 1px #000000;
+}
 
 /* Carousel base class */
 .carousel {
@@ -95,6 +107,22 @@ body {
   letter-spacing: -1px;
 }
 
+/* FOOTER CSS
+-------------------------------------------------- */
+#footer {
+    background: #212121;
+    background-color: #212121;
+    color: #f9f9f9;
+    padding-top: 60px;
+    position: static;
+    /* margin-top: -55px; */
+    margin-bottom: -40px;
+    bottom: 0;
+    width: 100%;
+    height: 330px;
+    /* box-sizing: border-box; */
+
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
