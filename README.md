@@ -13,5 +13,8 @@ Developed with HTML5, CSS3, Angular.js, javascript
 - Chrome 54.0.2
 - Internet Explorer 11.0.9600
 
+##### Notes:
+- Website uses Google Maps API v3 - which requires a developer API Key (not included).
+
 ##### Developed by:
 - Danielle Walker
