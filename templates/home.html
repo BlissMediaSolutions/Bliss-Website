@@ -1,6 +1,12 @@
 <!DOCTYPE html>
     <!-- Carousel
     ================================================== -->
+
+    <!-- Required Javascript files to make Carousel run automatically -->
+    <script src="js/bootstrap.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
@@ -51,6 +57,33 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
+
+<!-- Activate Carousel - make it run/scroll automatically -->
+<script>
+$(document).ready(function(){
+  // Activate Carousel
+  $("#myCarousel").carousel();
+
+  // Enable Carousel Indicators
+  $(".item1").click(function(){
+      $("#myCarousel").carousel(0);
+  });
+  $(".item2").click(function(){
+      $("#myCarousel").carousel(1);
+  });
+  $(".item3").click(function(){
+      $("#myCarousel").carousel(2);
+  });
+    
+  // Enable Carousel Controls
+  $(".left").click(function(){
+      $("#myCarousel").carousel("prev");
+  });
+  $(".right").click(function(){
+      $("#myCarousel").carousel("next");
+  });
+});
+</script>
     <!-- End Carousel -->
 
     <!-- Marketing messaging and featurettes
