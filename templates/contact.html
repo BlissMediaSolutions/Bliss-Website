@@ -1,68 +1,102 @@
-<hr class="featurette-divider">
+<style>
+body {
+  padding-top: 120px;
+  color: #000000;
+  }
+</style>
 
-<div class="row">
-    <h1 class="text-center">Contact Us</h1>
+<div class="container">
+    <h1 class="text-center" style="color: #27ace5">Contact Us</h1>
     <br>
-    <div id="map"></div>
-    <script>
-      var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -37.756292, lng: 145.066764},
-          zoom: 15
-        });
-      }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOURAPIKEY&callback=initMap"
-    async defer></script>
-
-    <hr>
-    <div class="col-sm-8">
-        <div class="row form-group">
-            <div class="col-xs-5">
-                <input class="form-control" id="firstName" name="firstName" placeholder="First Name" required="" type="text">
-            </div>
-            <!--<div class="col-xs-3">
-                <input class="form-control" id="middleName" name="firstName" placeholder="Middle Name" required="" type="text">
-            </div>-->
-            <div class="col-xs-5">
-                <input class="form-control" id="lastName" name="lastName" placeholder="Last Name" required="" type="text">
-            </div>
-        </div>
-        <div class="row form-group">
-            <div class="col-xs-5">
-                <input class="form-control" name="email" placeholder="Email" required="" type="email">
-            </div>
-            <div class="col-xs-5">
-                <input class="form-control" name="phone" placeholder="Phone" required="" type="email">
-            </div>
-        </div>
-        <div class="row form-group">
-            <div class="col-xs-10">
-                <input class="form-control" placeholder="Your Message" required="" type="text">
-            </div>
-        </div>
-        <div class="row form-group">
-            <div class="col-xs-10">
-                <button class="btn btn-default pull-right">Send Message</button>
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-3 pull-right"> <address>
-          <strong>Bliss Integrated Solutions</strong><br>
-          <span id="map-input">
-          PO Box 31,<br>
-          Heidelberg, Vic 3084<br>
-          </span>
-          <h5>Phone: 0401 819 255</h5>
-        </address>
-         <address>
-          <strong>Email Us</strong><br>
-          <a href="mailto:info@bliss.net.au">info@bliss.net.au</a>
-        </address>
-    </div>
 </div>
+
+<!--  GOOGLE MAP -->
+<div id="map"></div>
+<script>
+  function initMap() {
+    var heidi = {lat: -37.756292, lng: 145.066764};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 14,
+      center: heidi
+  });
+  var marker = new google.maps.Marker({
+  position: heidi,
+  map: map
+  });
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFzSRX1kF0z5DRrPltw0dL5Pc3jdxsXtA&callback=initMap"
+  async defer></script>
+
+<!--  END GOOGLE MAP -->
+<hr>
+
+<div class="container">
+  <div class="row">
+    <div class="text-center">
+        <h4 style="font-size:150%;">Bliss Integrated Solutions</h4>
+        <p>Mail: <span style="color:#564F4D"> PO Box 31, Heidelberg, Victoria, 3084 </span></p>
+        <p>Phone: <span style="color:#564F4D"> +61 401 819 255 </span></p>
+        <p>Email: <span style="color:#564F4D"> info@bliss.net.au </span></p>
+        <br>
+    </div>
+    <div class="col-md-12">
+              <div class="well well-sm">
+                  <form class="form-horizontal" method="post">
+                      <fieldset>
+                          <legend class="text-center header">Send us a Message</legend>
+
+                          <div class="form-group">
+                              <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                              <div class="col-md-8">
+                                  <input id="fname" name="name" type="text" placeholder="First Name" required="required" class="form-control">
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                              <div class="col-md-8">
+                                  <input id="lname" name="name" type="text" placeholder="Last Name" required="required" class="form-control">
+                              </div>
+                          </div>
+
+                          <div class="form-group">
+                              <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                              <div class="col-md-8">
+                                  <input id="email" name="email" type="text" placeholder="Email Address" required="required" class="form-control">
+                              </div>
+                          </div>
+
+                          <div class="form-group">
+                              <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+                              <div class="col-md-8">
+                                  <input id="phone" name="phone" type="text" placeholder="Phone" required="required" class="form-control">
+                              </div>
+                          </div>
+
+                          <div class="form-group">
+                              <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                              <div class="col-md-8">
+                                  <textarea class="form-control" id="message" name="message" required="required" placeholder="Enter your massage for us here. We will get back to you within 2 business days." rows="7"></textarea>
+                              </div>
+                          </div>
+
+                          <div class="form-group">
+                              <div class="col-md-12 text-center">
+                                  <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                              </div>
+                          </div>
+                      </fieldset>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
 <!--/row-->
 
-<hr class="featurette-divider">
-<script>google.maps.event.addDomListener(window, "load", initialize);</script>
+  <style>
+    .bigicon {
+      font-size: 35px;
+      color: #36A0FF;
+    }
+  </style>
+</div>

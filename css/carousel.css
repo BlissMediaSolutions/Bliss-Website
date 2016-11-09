@@ -107,25 +107,6 @@ body {
   letter-spacing: -1px;
 }
 
-/* FOOTER - refer sticky-footer.css
--------------------------------------------------- */
-/* #footer {
-    background: #212121;
-    background-color: #212121;
-    color: #f9f9f9;
-    padding-top: 15px;
-    position: static;
-    bottom:0;
-    width: 100%;
-    height: 200px;
-    padding-top: 60px;
-    position: static;
-    margin-bottom: -40px;
-    bottom: 0;
-    width: 100%;
-    height: 330px;
-} */
-
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
@@ -168,7 +149,7 @@ body {
 
 /* Google Maps */
 #map {
-        height: 400px;
-        width: 95%;
-        margin: 0 auto 0 auto;
+    height: 400px;
+    width: 95%;
+    margin: 0 auto 0 auto;
 }
